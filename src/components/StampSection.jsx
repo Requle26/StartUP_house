@@ -23,9 +23,9 @@ export default function StampSection() {
         <div className="stamps__head">
           <span className="eyebrow">02 · Unlock by Travel</span>
           <h2 className="stamps__title">
-            그 땅을 밟아야
+            내딛음으로 열리는
             <br />
-            열리는 페이지
+            당신의 페이지
           </h2>
           <p className="stamps__text">
             지역의 오디오 스토리는 처음엔 잠겨 있습니다. 화면 속 지도가 아니라
