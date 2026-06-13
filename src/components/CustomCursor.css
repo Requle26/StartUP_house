@@ -1,0 +1,73 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin: -9px 0 0 -9px;
+}
+
+.cursor__dot {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--stamp);
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1), height 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    background 0.35s ease, opacity 0.35s ease, border 0.35s ease;
+  mix-blend-mode: normal;
+}
+
+.cursor__label {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--paper);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cursor--view .cursor__dot,
+.cursor--play .cursor__dot,
+.cursor--drag .cursor__dot {
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  background: var(--ink);
+  opacity: 0.92;
+}
+
+.cursor--view,
+.cursor--play,
+.cursor--drag {
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+}
+
+.cursor--view .cursor__label,
+.cursor--play .cursor__label,
+.cursor--drag .cursor__label {
+  opacity: 1;
+}
+
+.cursor--stamp .cursor__dot {
+  width: 46px;
+  height: 46px;
+  margin: 0;
+  background: transparent;
+  border: 1.5px solid var(--stamp);
+}
+
+.cursor--stamp {
+  width: 46px;
+  height: 46px;
+  margin: -23px 0 0 -23px;
+}
