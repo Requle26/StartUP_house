@@ -126,7 +126,7 @@ export default function Locations() {
         <div className="locations__head">
           <span className="eyebrow">03 · Local Notes</span>
           <h2 className="locations__title">
-            도착 전에, 먼저
+            발자국 없이
             <br className="br-mobile" /> 동네를 걸어본다
           </h2>
           <p className="locations__text">
